@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './menuPosts.module.css';
 
 const getMostPopularFivePost = async () => {
-  const res = await fetch(`http://127.0.0.1:3000/api/posts?popular=5`, {
+  const res = await fetch(`process.env.NEXT_PUBLIC_API_URL/posts?popular=5`, {
     cache: 'no-store',
   });
 
